@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="503.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.asociado.asociadoapp.controller.AsociadoController">
+   <children>
+      <SplitPane dividerPositions="0.6287425149700598" orientation="VERTICAL" prefHeight="503.0" prefWidth="667.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="btnAgregarAsociado" layoutX="284.0" layoutY="254.0" mnemonicParsing="false" onAction="#onAgregarAsociado" prefHeight="25.0" prefWidth="121.0" text="Agregar Asociado" />
+                  <Label layoutX="52.0" layoutY="60.0" text="Nombre:" />
+                  <TextField fx:id="txtNombre" layoutX="107.0" layoutY="56.0" prefHeight="25.0" prefWidth="205.0" />
+                  <Label layoutX="11.0" layoutY="6.0" prefHeight="17.0" prefWidth="137.0" text="Informacion del asociado" />
+                  <Separator layoutX="17.0" layoutY="204.0" prefHeight="1.0" prefWidth="632.0" />
+                  <Label layoutX="55.0" layoutY="109.0" prefHeight="17.0" prefWidth="41.0" text="Cedula:" />
+                  <Label layoutX="52.0" layoutY="156.0" prefHeight="17.0" prefWidth="55.0" text="Telefono:" />
+                  <Label layoutX="360.0" layoutY="60.0" prefHeight="17.0" prefWidth="55.0" text="Apellido:" />
+                  <Label layoutX="360.0" layoutY="109.0" prefHeight="17.0" prefWidth="55.0" text="Edad:" />
+                  <Label layoutX="360.0" layoutY="156.0" prefHeight="17.0" prefWidth="55.0" text="Celular:" />
+                  <TextField fx:id="txtCedula" layoutX="107.0" layoutY="105.0" prefHeight="25.0" prefWidth="205.0" />
+                  <TextField fx:id="txtTelefono" layoutX="107.0" layoutY="152.0" prefHeight="25.0" prefWidth="205.0" />
+                  <TextField fx:id="txtApellido" layoutX="415.0" layoutY="56.0" prefHeight="25.0" prefWidth="205.0" />
+                  <TextField fx:id="txtEdad" layoutX="415.0" layoutY="105.0" prefHeight="25.0" prefWidth="205.0" />
+                  <TextField fx:id="txtCelular" layoutX="415.0" layoutY="152.0" prefHeight="25.0" prefWidth="205.0" />
+                  <Separator layoutX="21.0" layoutY="34.0" prefHeight="3.0" prefWidth="632.0" />
+                  <RadioButton fx:id="rBtnAsociadoBasico" layoutX="105.0" layoutY="207.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="121.0" text="Asociado basico" />
+                  <RadioButton fx:id="rBtnAsociadoPremium" layoutX="301.0" layoutY="207.0" mnemonicParsing="false" text="Asociado Premium" />
+                  <RadioButton fx:id="rBtnAsociadoVip" layoutX="504.0" layoutY="207.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="105.0" text="Asociado VIP" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="166.0" prefWidth="665.0">
+               <children>
+                  <TextArea fx:id="txtResultado" layoutX="7.0" layoutY="9.0" prefHeight="151.0" prefWidth="632.0" />
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
